@@ -101,6 +101,13 @@ function createNode(nullSafeNavigation, methodName, position, args) {
             }
         }
 
+        // string methods
+        if (typeof context === 'string') {
+            if (methodName === 'contains') {
+                return context.includes(compiledArgs[0]);
+            }
+        }
+
         method = maybeHandleNullSafeNavigation(context[methodName]);
         if (method) {
             return method.apply(context, compiledArgs);
