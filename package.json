@@ -1,5 +1,5 @@
 {
-  "name": "spel2js",
+  "name": "@zeng-alt/spel2js",
   "version": "0.2.9",
   "description": "Parse Spring Expression Language in JavaScript",
   "author": {
